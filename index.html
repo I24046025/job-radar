@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Job Radar</title>
+<style>
+  :root {
+    --bg: #f6f7f9; --card: #fff; --text: #1d2330; --muted: #667085; --line: #e4e7ec;
+    --accent: #2f6fed; --yes: #127a3e; --yes-bg: #e3f5ea; --likely: #8a5a00; --likely-bg: #fdf1d8;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #12151b; --card: #1b2029; --text: #e7eaf0; --muted: #98a2b3; --line: #2c3340;
+      --accent: #7aa2ff; --yes: #6ad59a; --yes-bg: #173526; --likely: #f0c46a; --likely-bg: #3a2e14;
+    }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text);
+    font: 15px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang TC", "Noto Sans TC", sans-serif; }
+  main { max-width: 860px; margin: 0 auto; padding: 24px 16px 64px; }
+  h1 { font-size: 22px; margin: 0 0 4px; }
+  .sub { color: var(--muted); font-size: 13px; margin-bottom: 16px; }
+  .bar { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-bottom: 12px; }
+  select, button { font: inherit; color: var(--text); background: var(--card); border: 1px solid var(--line);
+    border-radius: 8px; padding: 6px 12px; cursor: pointer; }
+  button.on { background: var(--accent); border-color: var(--accent); color: #fff; }
+  .summary { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 12px 14px;
+    margin-bottom: 16px; white-space: pre-line; }
+  .job { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 14px 16px; margin-bottom: 10px; }
+  .top { display: flex; justify-content: space-between; gap: 12px; align-items: baseline; }
+  .title { font-weight: 600; font-size: 16px; color: var(--accent); text-decoration: none; }
+  .title:hover { text-decoration: underline; }
+  .fit { white-space: nowrap; color: #e3a008; letter-spacing: 1px; }
+  .meta { color: var(--muted); font-size: 13px; margin: 2px 0 8px; }
+  .tags { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 6px; }
+  .tag { font-size: 12px; border-radius: 999px; padding: 1px 9px; border: 1px solid var(--line); color: var(--muted); }
+  .tag.yes { background: var(--yes-bg); color: var(--yes); border-color: transparent; }
+  .tag.likely { background: var(--likely-bg); color: var(--likely); border-color: transparent; }
+  .why { font-size: 14px; }
+  .note { font-size: 13px; color: var(--muted); margin-top: 4px; }
+  .empty { color: var(--muted); text-align: center; padding: 40px 0; }
+  .quick { font-size: 13px; color: var(--muted); margin-bottom: 12px; display: flex; flex-wrap: wrap; gap: 6px 12px; }
+  .quick a { color: var(--accent); }
+</style>
+</head>
+<body>
+<main>
+  <h1>Job Radar</h1>
+  <div class="sub" id="sub">載入中…</div>
+  <div class="bar">
+    <select id="date" aria-label="日期"></select>
+    <span id="tabs"></span>
+  </div>
+  <div class="quick" id="quick"></div>
+  <div class="summary" id="summary" hidden></div>
+  <div id="list"></div>
+</main>
+<script>
+const CATS = { all: "全部", data: "Data", supply_chain: "Supply Chain", aml: "AML / Compliance" };
+const SPONSOR = { yes: ["yes", "JD 寫明可 sponsor"], likely: ["likely", "公司常 sponsor H-1B"] };
+// Indeed blocks automated reads, so link to its live 24h search instead
+const INDEED = {
+  "Data Analyst": '"data analyst" OR "business intelligence analyst"',
+  "Supply Chain": '"supply chain analyst" OR "procurement analyst" OR "demand planning"',
+  "AML / KYC": 'AML OR KYC OR sanctions OR "financial crimes" analyst',
+};
+document.getElementById("quick").innerHTML = "Indeed 24 小時內（含 H-1B / sponsorship）：" + Object.entries(INDEED).map(([k, q]) =>
+  `<a target="_blank" rel="noopener" href="https://www.indeed.com/jobs?${new URLSearchParams({
+    q: `(${q}) (h1b OR "visa sponsorship" OR "h-1b")`, l: "United States", fromage: 1, sort: "date" })}">${k}</a>`).join("");
+let day = null, cat = "all";
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+
+async function load(date) {
+  const r = await fetch(`data/jobs/${date}.json`, { cache: "no-cache" });
+  day = await r.json();
+  document.getElementById("sub").textContent =
+    `${day.date}・${day.jobs.length} 個職缺・更新於 ${new Date(day.generated_at).toLocaleString("zh-TW", { timeZone: "Pacific/Honolulu" })}（夏威夷時間）`;
+  const s = document.getElementById("summary");
+  s.hidden = !day.summary; s.textContent = day.summary || "";
+  render();
+}
+
+function render() {
+  document.getElementById("tabs").innerHTML = Object.entries(CATS).map(([k, v]) => {
+    const n = k === "all" ? day.jobs.length : day.jobs.filter(j => j.category === k).length;
+    return `<button data-cat="${k}" class="${k === cat ? "on" : ""}">${v} ${n}</button>`;
+  }).join(" ");
+  const jobs = day.jobs.filter(j => cat === "all" || j.category === cat).sort((a, b) => b.fit - a.fit);
+  document.getElementById("list").innerHTML = jobs.length ? jobs.map(j => {
+    const [cls, label] = SPONSOR[j.sponsor] || ["", j.sponsor];
+    return `<div class="job">
+      <div class="top"><a class="title" href="${esc(j.url)}" target="_blank" rel="noopener">${esc(j.title)}</a>
+        <span class="fit" title="適合度">${"★".repeat(j.fit)}${"☆".repeat(5 - j.fit)}</span></div>
+      <div class="meta">${esc(j.company)}・${esc(j.location)}・${esc(j.posted_ago)}${j.salary ? "・" + esc(j.salary) : ""}</div>
+      <div class="tags"><span class="tag ${cls}">${esc(label)}</span><span class="tag">${esc(CATS[j.category] || j.category)}</span>${j.resume ? `<span class="tag">用履歷：${esc(j.resume)}</span>` : ""}</div>
+      <div class="why">${esc(j.why)}</div>
+      ${j.sponsor_note ? `<div class="note">簽證：${esc(j.sponsor_note)}</div>` : ""}
+    </div>`;
+  }).join("") : `<div class="empty">這個分類今天沒有符合的職缺</div>`;
+}
+
+document.getElementById("tabs").addEventListener("click", e => {
+  const b = e.target.closest("button"); if (b) { cat = b.dataset.cat; render(); }
+});
+document.getElementById("date").addEventListener("change", e => load(e.target.value));
+
+(async () => {
+  const dates = await (await fetch("data/index.json", { cache: "no-cache" })).json();
+  const sel = document.getElementById("date");
+  sel.innerHTML = dates.map(d => `<option>${d}</option>`).join("");
+  if (dates.length) load(dates[0]);
+  else document.getElementById("sub").textContent = "還沒有資料";
+})();
+</script>
+</body>
+</html>
