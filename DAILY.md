@@ -31,7 +31,8 @@ Run from the repo root. The candidate's profile and preferences are in the promp
        "sponsor_note": "繁中一句：根據什麼判斷（引用 JD 原句或公司過往 H-1B 紀錄）",
        "fit": 1-5,
        "why": "繁中一兩句：對照履歷為什麼適合／要注意什麼",
-       "resume": "DataAnalyst | SupplyChain | AML"
+       "resume": "DataAnalyst | SupplyChain | AML",
+       "source": "copied from the candidate's source field: linkedin | workday | oracle | greenhouse | lever | ashby | smartrecruiters | amazon"
      }]
    }
    ```

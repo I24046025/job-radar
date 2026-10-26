@@ -15,7 +15,8 @@
    "sponsor_note": "BNY 是長期 H-1B sponsor；JD 沒寫不 sponsor",
    "fit": 5,
    "why": "Data Analyst & BI，要求 3–5 年經驗，跟你的 SQL/Tableau/Power BI 背景幾乎完全吻合。",
-   "resume": "DataAnalyst"
+   "resume": "DataAnalyst",
+   "source": "oracle"
   },
   {
    "title": "Quant Analytics Senior Associate – Business Intelligence",
@@ -29,7 +30,8 @@
    "sponsor_note": "JPMorgan 是全美前幾大 H-1B sponsor；JD 沒寫不 sponsor",
    "fit": 5,
    "why": "要求 3 年以上 Python、PySpark、SQL，正是你在 SMBC Databricks 做的事；BI 方向。",
-   "resume": "DataAnalyst"
+   "resume": "DataAnalyst",
+   "source": "oracle"
   },
   {
    "title": "Sr. Data Analyst, Supplier Performance",
@@ -43,7 +45,8 @@
    "sponsor_note": "Home Depot 有大量 sponsor 紀錄；JD 只要求「可合法在美工作」，沒寫不 sponsor",
    "fit": 5,
    "why": "供應商績效資料分析：資料分析加供應鏈，正好是你兩個強項的交集；最低 2 年經驗。",
-   "resume": "SupplyChain"
+   "resume": "SupplyChain",
+   "source": "workday"
   },
   {
    "title": "Operations Analyst - Sanctions Screening Center of Excellence",
@@ -57,7 +60,8 @@
    "sponsor_note": "Bank of America 每年大量 sponsor H-1B；JD 沒寫不 sponsor",
    "fit": 4,
    "why": "制裁名單篩查（Sanctions Screening）正對你在 Deloitte 做 AML/PEP screening 的經驗；Operations 職等、時薪制，薪資偏低，要確認是否達 H-1B prevailing wage。",
-   "resume": "AML"
+   "resume": "AML",
+   "source": "linkedin"
   },
   {
    "title": "AML Investigator",
@@ -71,7 +75,8 @@
    "sponsor_note": "U.S. Bank 是常態 H-1B sponsor；JD 沒寫不 sponsor",
    "fit": 4,
    "why": "AML 調查員，直接用到你的 AML 篩查與客戶風險評分經驗。",
-   "resume": "AML"
+   "resume": "AML",
+   "source": "workday"
   },
   {
    "title": "Senior Analyst, AML Investigations",
@@ -85,7 +90,8 @@
    "sponsor_note": "Circle 過去有 sponsor H-1B 紀錄；JD 沒寫不 sponsor",
    "fit": 4,
    "why": "Circle（USDC 穩定幣）做 AML 調查，加密貨幣金融犯罪；你的 SQL/Python 加 AML 背景很加分。",
-   "resume": "AML"
+   "resume": "AML",
+   "source": "linkedin"
   },
   {
    "title": "Sr. Fraud Risk Management Analyst",
@@ -99,7 +105,8 @@
    "sponsor_note": "公司是大型、長期 sponsor H-1B 的雇主；JD 沒寫不 sponsor",
    "fit": 4,
    "why": "詐欺風險管理分析，偏資料分析（SQL 規則、指標監控），和你 SMBC 的 Customer Risk Rating 經驗接近。",
-   "resume": "AML"
+   "resume": "AML",
+   "source": "workday"
   },
   {
    "title": "Trust & Safety - Fraud Strategy Analyst- Senior  Associate",
@@ -113,7 +120,8 @@
    "sponsor_note": "JPMorgan 是全美前幾大 H-1B sponsor；JD 沒寫不 sponsor",
    "fit": 4,
    "why": "JPMorgan 詐欺策略分析，要求 2 年以上量化經驗，用資料設計防詐規則；你資歷足夠。",
-   "resume": "AML"
+   "resume": "AML",
+   "source": "oracle"
   },
   {
    "title": "Quant Analytics, Senior Associate - Asset Wealth Management",
@@ -127,7 +135,8 @@
    "sponsor_note": "JPMorgan 是全美前幾大 H-1B sponsor；JD 沒寫不 sponsor",
    "fit": 4,
    "why": "資產與財富管理部門的量化分析，SQL/Python 為主。",
-   "resume": "DataAnalyst"
+   "resume": "DataAnalyst",
+   "source": "oracle"
   },
   {
    "title": "Analyst-Data Science",
@@ -141,7 +150,8 @@
    "sponsor_note": "American Express 是常態 H-1B sponsor；JD 沒寫不 sponsor",
    "fit": 4,
    "why": "Amex 資料科學分析師（Analyst 職等），年薪 $78K–$125K，適合你的年資。",
-   "resume": "DataAnalyst"
+   "resume": "DataAnalyst",
+   "source": "linkedin"
   },
   {
    "title": "Business Analyst II, WW Grocery Store Private Brands",
@@ -155,7 +165,8 @@
    "sponsor_note": "Amazon 是全美最大 H-1B sponsor 之一",
    "fit": 4,
    "why": "Amazon 自有品牌雜貨的 BA II，SQL 加報表，也和零售供應鏈相關。",
-   "resume": "DataAnalyst"
+   "resume": "DataAnalyst",
+   "source": "linkedin"
   },
   {
    "title": "Data Analyst",
@@ -169,7 +180,8 @@
    "sponsor_note": "BMS（大藥廠）常態 sponsor；JD 沒寫不 sponsor",
    "fit": 4,
    "why": "要求 4 年以上 Data Analyst 經驗與 Tableau，你都符合。",
-   "resume": "DataAnalyst"
+   "resume": "DataAnalyst",
+   "source": "linkedin"
   },
   {
    "title": "Senior System and Reporting Analyst",
@@ -183,7 +195,8 @@
    "sponsor_note": "NVIDIA 是大型 H-1B sponsor；JD 沒寫不 sponsor",
    "fit": 4,
    "why": "NVIDIA 的系統與報表分析，半導體公司，符合你對半導體的興趣。",
-   "resume": "DataAnalyst"
+   "resume": "DataAnalyst",
+   "source": "workday"
   },
   {
    "title": "Senior Business Intelligence Analyst",
@@ -197,7 +210,8 @@
    "sponsor_note": "公司是大型、長期 sponsor H-1B 的雇主；JD 沒寫不 sponsor",
    "fit": 4,
    "why": "物流公司的 Senior BI Analyst，資料加供應鏈。",
-   "resume": "DataAnalyst"
+   "resume": "DataAnalyst",
+   "source": "linkedin"
   },
   {
    "title": "Inventory Optimization Planner",
@@ -211,7 +225,8 @@
    "sponsor_note": "onsemi 有 sponsor 紀錄；JD 沒寫不 sponsor",
    "fit": 4,
    "why": "半導體公司 onsemi 的庫存最佳化規劃，正是你想走的半導體供應鏈；要求 7 年以上經驗，略高於你的年資。",
-   "resume": "SupplyChain"
+   "resume": "SupplyChain",
+   "source": "linkedin"
   },
   {
    "title": "Sr International Logistics Analyst (Hybrid)",
@@ -225,7 +240,8 @@
    "sponsor_note": "Target 是常態 sponsor；JD 沒寫不 sponsor",
    "fit": 4,
    "why": "Target 國際物流分析（Senior），對接亞洲供應商時中文是加分。",
-   "resume": "SupplyChain"
+   "resume": "SupplyChain",
+   "source": "workday"
   },
   {
    "title": "Supply Chain Analyst",
@@ -239,7 +255,8 @@
    "sponsor_note": "Motorola Solutions 有 sponsor 紀錄；JD 沒寫不 sponsor",
    "fit": 4,
    "why": "Motorola Solutions 供應鏈分析師；有些職位涉及出口管制，申請前看一下 JD。",
-   "resume": "SupplyChain"
+   "resume": "SupplyChain",
+   "source": "linkedin"
   },
   {
    "title": "Business Analyst, Contract Manufacturing - Columbus, OH",
@@ -253,7 +270,8 @@
    "sponsor_note": "Abbott 是常態 sponsor；JD 沒寫不 sponsor",
    "fit": 4,
    "why": "Abbott 委外製造 BA，負責協調供應商和訂單，跟你現在的工作很像。",
-   "resume": "SupplyChain"
+   "resume": "SupplyChain",
+   "source": "workday"
   },
   {
    "title": "Fraud Risk Analyst",
@@ -267,7 +285,8 @@
    "sponsor_note": "公司是大型、長期 sponsor H-1B 的雇主；JD 沒寫不 sponsor",
    "fit": 3,
    "why": "詐欺風險分析初中階職位，比較容易拿到面試。",
-   "resume": "AML"
+   "resume": "AML",
+   "source": "linkedin"
   },
   {
    "title": "Senior Compliance Specialist - Surveillance Team",
@@ -281,7 +300,8 @@
    "sponsor_note": "公司是大型、長期 sponsor H-1B 的雇主；JD 沒寫不 sponsor",
    "fit": 3,
    "why": "合規監控（Surveillance）團隊，偏交易監控；Senior 職等，可強調 Deloitte + SMBC 合規相關經驗。",
-   "resume": "AML"
+   "resume": "AML",
+   "source": "workday"
   },
   {
    "title": "Governance Risk Compliance Wealth Management Analyst",
@@ -295,7 +315,8 @@
    "sponsor_note": "Regions 有 sponsor 紀錄但量較少，建議面試前先問",
    "fit": 3,
    "why": "財富管理部門的治理、風險與合規分析師，可以用 AML 版履歷投。",
-   "resume": "AML"
+   "resume": "AML",
+   "source": "linkedin"
   },
   {
    "title": "Compliance Analyst",
@@ -309,7 +330,8 @@
    "sponsor_note": "公司是大型、長期 sponsor H-1B 的雇主；JD 沒寫不 sponsor",
    "fit": 3,
    "why": "物流公司的合規分析，可能偏貿易合規／海關；同時用得到供應鏈和合規背景。",
-   "resume": "SupplyChain"
+   "resume": "SupplyChain",
+   "source": "workday"
   },
   {
    "title": "Quant Analytics Assoc.",
@@ -323,7 +345,8 @@
    "sponsor_note": "公司是大型、長期 sponsor H-1B 的雇主；JD 沒寫不 sponsor",
    "fit": 3,
    "why": "KeyBank 量化分析 Associate，SQL/Python 為主。",
-   "resume": "DataAnalyst"
+   "resume": "DataAnalyst",
+   "source": "workday"
   },
   {
    "title": "Liquidity Regulatory Reporting Analyst, AVP",
@@ -337,7 +360,8 @@
    "sponsor_note": "MUFG（日系銀行）常 sponsor H-1B；JD 沒寫不 sponsor",
    "fit": 3,
    "why": "流動性監管報表（AVP），偏銀行監管報表，用得到你的資料驗證經驗。",
-   "resume": "DataAnalyst"
+   "resume": "DataAnalyst",
+   "source": "workday"
   },
   {
    "title": "Business Intelligence Analyst / Data Engineer",
@@ -351,7 +375,8 @@
    "sponsor_note": "GEICO 有 sponsor 紀錄；JD 沒寫不 sponsor",
    "fit": 3,
    "why": "BI 分析師兼 Data Engineer，年薪 $91K–$172K；你有 ETL/後端背景，很適合。",
-   "resume": "DataAnalyst"
+   "resume": "DataAnalyst",
+   "source": "linkedin"
   },
   {
    "title": "Senior Product Data Analyst, Dealer",
@@ -365,7 +390,8 @@
    "sponsor_note": "CarGurus 有 sponsor 紀錄；JD 沒寫不 sponsor",
    "fit": 3,
    "why": "產品資料分析（Senior）。",
-   "resume": "DataAnalyst"
+   "resume": "DataAnalyst",
+   "source": "linkedin"
   },
   {
    "title": "Analyst, Marketing Business Intelligence",
@@ -379,7 +405,8 @@
    "sponsor_note": "Williams-Sonoma 有 sponsor 紀錄；JD 沒寫不 sponsor",
    "fit": 3,
    "why": "行銷 BI 分析師（Analyst 職等）。",
-   "resume": "DataAnalyst"
+   "resume": "DataAnalyst",
+   "source": "linkedin"
   },
   {
    "title": "Data Analyst",
@@ -393,7 +420,8 @@
    "sponsor_note": "PACCAR 有 sponsor 紀錄；JD 沒寫不 sponsor",
    "fit": 3,
    "why": "PACCAR 金融子公司的資料分析師，在西雅圖（你在 Northeastern Seattle 讀過書）。",
-   "resume": "DataAnalyst"
+   "resume": "DataAnalyst",
+   "source": "linkedin"
   },
   {
    "title": "Data Quality Analyst",
@@ -407,7 +435,8 @@
    "sponsor_note": "ICF 有 sponsor 紀錄，但政府專案可能限公民",
    "fit": 3,
    "why": "資料品質分析，正對你在 SMBC 做的 data quality monitoring；ICF 有政府專案，要確認是否需要 public trust。",
-   "resume": "DataAnalyst"
+   "resume": "DataAnalyst",
+   "source": "linkedin"
   },
   {
    "title": "Sr Demand and Supply Planner",
@@ -421,7 +450,8 @@
    "sponsor_note": "Intuitive 有 sponsor 紀錄；JD 沒寫不 sponsor",
    "fit": 3,
    "why": "手術機器人公司的需求與供給規劃（Senior），年薪 $119K–$201K。",
-   "resume": "SupplyChain"
+   "resume": "SupplyChain",
+   "source": "linkedin"
   },
   {
    "title": "Strategic Sourcing Analyst II (Hybrid)",
@@ -435,7 +465,8 @@
    "sponsor_note": "M&T Bank 有 sponsor 紀錄；JD 沒寫不 sponsor",
    "fit": 3,
    "why": "銀行的策略採購分析，要求 4 年以上經驗。",
-   "resume": "SupplyChain"
+   "resume": "SupplyChain",
+   "source": "linkedin"
   },
   {
    "title": "Procurement Analyst",
@@ -449,7 +480,8 @@
    "sponsor_note": "SAS 有 sponsor 紀錄",
    "fit": 3,
    "why": "SAS 採購分析師；JD 提到出口管制可能會問國籍，但沒寫不 sponsor。",
-   "resume": "SupplyChain"
+   "resume": "SupplyChain",
+   "source": "linkedin"
   },
   {
    "title": "Inventory Planner, Food",
@@ -463,7 +495,8 @@
    "sponsor_note": "Williams-Sonoma 有 sponsor 紀錄；JD 沒寫不 sponsor",
    "fit": 3,
    "why": "食品類庫存規劃。",
-   "resume": "SupplyChain"
+   "resume": "SupplyChain",
+   "source": "linkedin"
   },
   {
    "title": "Sr. Inventory Planner, Bedroom Furniture - West Elm",
@@ -477,7 +510,8 @@
    "sponsor_note": "Williams-Sonoma 有 sponsor 紀錄；JD 沒寫不 sponsor",
    "fit": 3,
    "why": "West Elm（Williams-Sonoma 旗下）家具庫存規劃（Senior），和你的建材產品經驗相關。",
-   "resume": "SupplyChain"
+   "resume": "SupplyChain",
+   "source": "linkedin"
   },
   {
    "title": "Senior Financial Analyst, Inventory Control",
@@ -491,7 +525,8 @@
    "sponsor_note": "Ross 有 sponsor 紀錄；JD 沒寫不 sponsor",
    "fit": 3,
    "why": "庫存控制的財務分析（Senior）。",
-   "resume": "SupplyChain"
+   "resume": "SupplyChain",
+   "source": "linkedin"
   },
   {
    "title": "Senior Analyst - EC W&D",
@@ -505,7 +540,8 @@
    "sponsor_note": "韓系企業常 sponsor；JD 沒寫不 sponsor",
    "fit": 3,
    "why": "Hyundai Glovis 美國的倉儲物流分析；亞洲企業，會中文是加分。",
-   "resume": "SupplyChain"
+   "resume": "SupplyChain",
+   "source": "linkedin"
   },
   {
    "title": "Senior Warehouse Mgmt. Systems (WMS) Analyst",
@@ -519,7 +555,8 @@
    "sponsor_note": "DHL 有 sponsor 紀錄；JD 沒寫不 sponsor",
    "fit": 3,
    "why": "倉儲管理系統分析（Senior），你有系統和資料背景。",
-   "resume": "SupplyChain"
+   "resume": "SupplyChain",
+   "source": "linkedin"
   }
  ]
 }
